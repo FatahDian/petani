@@ -1,5 +1,6 @@
 import streamlit as st
-
+st.title("Menghitung Hasil Panen Ibune")
+st.write(""" Web untuk menghitung hasil panen perhektar dengan jarak tanam per petak""")
 # Input dari pengguna
 jumlah_tanaman_per_hektar = st.number_input("Jumlah Tanaman per Hektar:", min_value=1, value=1)
 jumlah_malai_per_tanaman = st.number_input("Jumlah Malai per Tanaman:", min_value=1, value=1)
@@ -14,3 +15,4 @@ populasi_tumbuhan_per_hektar = jumlah_tanaman_per_hektar / (jarak_tanam / 100) /
 # Output
 st.write(f"Perkiraan Hasil Panen: {hasil_panen:.2f} Ton per Hektar")
 st.write(f"Jumlah Populasi Tumbuhan per Hektar: {populasi_tumbuhan_per_hektar:.2f} Tanaman per Hektar")
+st.write("mbayar nggit")
